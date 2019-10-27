@@ -2,10 +2,23 @@
 <html>
     <head>
         <title>Login/Signup</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <form>
-            <input type="text" name="username" />
+        <form method="POST" class="center">
+            <input type="text" name="username" placeholder="username"/> <br />
+            <input type="password" name="password" placeholder="password"/> <br />
+
+            Gender :
+            <input type="radio" name="gender" value="male"> Male 
+            <input type="radio" name="gender" value="female"> Female <br />
+
+            <input list="countries" placeholder="country">
+            <datalist id="countries">
+                <option>India</option>
+                <option>America</option>
+                <option>Japan</option>
+            </datalist> 
             <input type="submit" value="Submit" />
         </form>
     </body>
